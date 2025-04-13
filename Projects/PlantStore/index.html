@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PlantStore</title>
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+            rel="stylesheet" />
+        <!-- Swiper Css -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <!-- Main style file -->
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <div class="loader" id="loader">
+            <h2>هذا التصميم هو تصميم تخيلي قمت بإنشائه لأعرض مهاراتي.</h2>
+            <h2>
+                This design is a fictional creation I made to showcase my skills
+            </h2>
+
+            <div href="" id="got-it">
+                <span>فهمت ذلك</span> | <span>i got it</span>
+            </div>
+        </div>
+        <a href="https://osman-abdalaziz.infinityfreeapp.com/"
+            ><i class="fa-solid fa-arrow-left-long"></i
+        ></a>
+
+        <div class="dark-light" onclick="toggleDarkMode()">
+            <i
+                class="fa-solid fa-sun fas dark-light-toggle"
+                id="toggleButton"></i>
+        </div>
+        <div class="animation-landing hidden up" id="animation">
+            <!-- Navbar -->
+            <nav>
+                <div class="container">
+                    <div class="logo">
+                        <img src="images/logo - light.png" alt="" />
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="right-group">
+                        <div class="mobile-menu">
+                            <div class="icon">
+                                <i class="fa-solid fa-bars fa-fw"></i>
+                            </div>
+                            <div class="menu-mob">
+                                <i class="fa-solid fa-x fa-fw"></i>
+                                <ul>
+                                    <li>
+                                        <i
+                                            class="fa-solid fa-magnifying-glass"></i
+                                        ><i
+                                            class="fa-solid fa-bag-shopping"></i>
+                                    </li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <div class="avatar">
+                            <img src="images/avatar.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Landing -->
+            <main class="landing">
+                <div class="container">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="text">
+                                    <h1>
+                                        A beautiful <span>plant</span> is like
+                                        having a friend around the house.
+                                    </h1>
+                                    <p>
+                                        Plants help improve air quality ·
+                                        Reducing carbon dioxide levels ·
+                                        Increasing humidity · Reducing levels of
+                                        certain pollutants, such as benzene and
+                                        nitrogen
+                                    </p>
+                                </div>
+                                <div class="buttons">
+                                    <div class="btn-explore">Explore More</div>
+                                    <div class="btn-learn-more">
+                                        Learn More
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="text">
+                                    <h1>
+                                        A beautiful <span>plant</span> is like
+                                        having a friend around the house.
+                                    </h1>
+                                    <p>
+                                        Plants help improve air quality ·
+                                        Reducing carbon dioxide levels ·
+                                        Increasing humidity · Reducing levels of
+                                        certain pollutants, such as benzene and
+                                        nitrogen
+                                    </p>
+                                </div>
+                                <div class="buttons">
+                                    <div class="btn-explore">Explore More</div>
+                                    <div class="btn-learn-more">
+                                        Learn More
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="text">
+                                    <h1>
+                                        A beautiful <span>plant</span> is like
+                                        having a friend around the house.
+                                    </h1>
+                                    <p>
+                                        Plants help improve air quality ·
+                                        Reducing carbon dioxide levels ·
+                                        Increasing humidity · Reducing levels of
+                                        certain pollutants, such as benzene and
+                                        nitrogen
+                                    </p>
+                                </div>
+                                <div class="buttons">
+                                    <div class="btn-explore">Explore More</div>
+                                    <div class="btn-learn-more">
+                                        Learn More
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="text">
+                                    <h1>
+                                        A beautiful <span>plant</span> is like
+                                        having a friend around the house.
+                                    </h1>
+                                    <p>
+                                        Plants help improve air quality ·
+                                        Reducing carbon dioxide levels ·
+                                        Increasing humidity · Reducing levels of
+                                        certain pollutants, such as benzene and
+                                        nitrogen
+                                    </p>
+                                </div>
+                                <div class="buttons">
+                                    <div class="btn-explore">Explore More</div>
+                                    <div class="btn-learn-more">
+                                        Learn More
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="next-prev">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="landing-image">
+                        <img
+                            src="images/landing - bolb (1) - light.png"
+                            alt=""
+                            class="bolb bolb_one" />
+                        <img
+                            src="images/landing - bolb (2) - light.png"
+                            alt=""
+                            class="bolb bolb_two" />
+                        <img
+                            src="images/landing.png"
+                            alt=""
+                            class="main-image" />
+                    </div>
+                    <i class="fa-solid fa-angles-down"></i>
+                </div>
+            </main>
+        </div>
+        <section class="services">
+            <div class="container">
+                <div class="services-image">
+                    <img class="main-img" src="images/services.png" alt="" />
+                    <img
+                        class="bolb bolb_one"
+                        src="images/Services - bolb (1) - light.png"
+                        alt="" />
+                    <img
+                        class="bolb bolb_two"
+                        src="images/Services - bolb (2) - light.png"
+                        alt="" />
+                </div>
+                <div class="services-container">
+                    <div class="service">
+                        <div class="service-icon">
+                            <img src="images/service - light (1).png" alt="" />
+                        </div>
+                        <div class="service-text">
+                            <h3>Quick Payment</h3>
+                            <p>100% secure payment</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon">
+                            <img src="images/service - light (2).png" alt="" />
+                        </div>
+                        <div class="service-text">
+                            <h3>Fast Delivery</h3>
+                            <p>No delay more than 3 days</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon">
+                            <img src="images/service - light (3).png" alt="" />
+                        </div>
+                        <div class="service-text">
+                            <h3>Free Shapping</h3>
+                            <p>No charge for each delivery</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon">
+                            <img src="images/service - light (4).png" alt="" />
+                        </div>
+                        <div class="service-text">
+                            <h3>Support 24/7</h3>
+                            <p>Quick support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container">
+                <div class="head">
+                    <div class="sort">
+                        <span>Sort By:</span>
+                        <div class="sort-list">
+                            <select>
+                                <option>Newest</option>
+                                <option>Price Low to High</option>
+                                <option>Price High to Low</option>
+                                <option>Oldest</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="list-grid">
+                        <i class="fa-solid fa-list"></i>
+                        <i class="fa-solid fa-border-all active"></i>
+                    </div>
+                </div>
+                <hr />
+
+                <div class="products-container">
+                    <div class="product">
+                        <img src="images/Product (1).png" alt="" />
+                        <h3>Cactus</h3>
+                        <p>Price: 20$</p>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="buttons">
+                            <div class="fav-btn">
+                                Add To Favorite
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="add-cart">
+                                Add To Cart<i
+                                    class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/Product (2).png" alt="" />
+                        <h3>Epipremnum aureum</h3>
+                        <p>Price: 30$</p>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-regular fa-star-half-stroke"></i>
+                        </div>
+                        <div class="buttons">
+                            <div class="fav-btn">
+                                Add To Favorite
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="add-cart">
+                                Add To Cart<i
+                                    class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/Product (3).png" alt="" />
+                        <h3>Eucalyptus cinerea</h3>
+                        <p>Price: 10$</p>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-regular fa-star"></i
+                            ><i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="buttons">
+                            <div class="fav-btn">
+                                Add To Favorite
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="add-cart">
+                                Add To Cart<i
+                                    class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/Product (4).png" alt="" />
+                        <h3>Snake plant</h3>
+                        <p>Price: 25$</p>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-regular fa-star-half-stroke"></i
+                            ><i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="buttons">
+                            <div class="fav-btn">
+                                Add To Favorite
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="add-cart">
+                                Add To Cart<i
+                                    class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/Product (5).png" alt="" />
+                        <h3>Dracaena trifasciata</h3>
+                        <p>Price: 15$</p>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-regular fa-star-half-stroke"></i>
+                        </div>
+                        <div class="buttons">
+                            <div class="fav-btn">
+                                Add To Favorite
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="add-cart">
+                                Add To Cart<i
+                                    class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/Product (6).png" alt="" />
+                        <h3>Senecio rowleyanus</h3>
+                        <p>Price: 35$</p>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-regular fa-star-half-stroke"></i
+                            ><i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="buttons">
+                            <div class="fav-btn">
+                                Add To Favorite
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="add-cart">
+                                Add To Cart<i
+                                    class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="pagation">
+                    <li class="border">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </li>
+                    <li class="border">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>...</li>
+                    <li>12</li>
+                    <li class="border">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="form">
+                    <h2>Let's get in touch</h2>
+                    <form action="">
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Full Name" />
+                        <input type="email" name="email" placeholder="Email" />
+                        <textarea
+                            name="message"
+                            id=""
+                            placeholder="Your Message"></textarea>
+                        <button>
+                            Send <i class="fa-solid fa-paper-plane fa-fw"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-img">
+                    <img src="images/contact.png" alt="" class="main-img" />
+                    <img
+                        src="images/contact - bolb (1) - light.png"
+                        alt=""
+                        class="bolb bolb_one" />
+                    <img
+                        src="images/contact - bolb (2) - light.png"
+                        alt=""
+                        class="bolb bolb_two" />
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="upperpart">
+                <div class="container">
+                    <div class="left">
+                        <h1>Newsletter</h1>
+                        <div class="subscribe">
+                            <input
+                                type="email"
+                                name=""
+                                id=""
+                                placeholder="Email" />
+                            <button>Subscribe</button>
+                        </div>
+                        <h1>Follow Us</h1>
+                        <div class="social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i
+                            ><i class="fa-brands fa-twitter"></i
+                            ><i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="col">
+                            <h3>About Us</h3>
+                            <ul>
+                                <li>About Us</li>
+                                <li>Features</li>
+                                <li>Privacy Police</li>
+                                <li>Terms & Conditions</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>Support</h3>
+                            <ul>
+                                <li>F.A.Q.</li>
+                                <li>Contact Us</li>
+                                <li>Live Chat</li>
+                                <li>Phone Call</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>Jobs</h3>
+                            <ul>
+                                <li>HR</li>
+                                <li>Requirements</li>
+                                <li>Phone Call</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lowerpart">
+                <div class="container">
+                    <div class="left">Copyrights &copy; 2023 - 2024</div>
+                    <div class="right">
+                        Made With Love By
+                        <img src="images/white-logo.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Swiper Js -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Main JS -->
+        <script src="javascript/main.js"></script>
+    </body>
+</html>

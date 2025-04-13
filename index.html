@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Open Graph meta tags -->
+        <meta property="og:title" content="Osman | Portfolio" />
+        <meta
+            property="og:description"
+            content="With over 5 years of experience in front-end
+                            development, I specialize in creating responsive,
+                            user-friendly websites." />
+        <meta
+            property="og:image"
+            itemprop="image"
+            content="https://i.ibb.co/FKsSX77/Custom-Size-1.png" />
+        <link
+            itemprop="thumbnailUrl"
+            href="https://i.ibb.co/FKsSX77/Custom-Size-1.png" />
+        <meta
+            property="og:url"
+            content="https://osman-abdalaziz.infinityfreeapp.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Osman | Portfolio" />
+        <title>Osman | Portfolio</title>
+        <!-- Google Font (Poppins) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet" />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <!-- Normalize -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <!-- Main Style File -->
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <span itemprop="image" itemscope itemtype="image/png">
+            <link
+                itemprop="url"
+                href="https://i.ibb.co/FKsSX77/Custom-Size-1.png" />
+        </span>
+        <div class="dark-light-noti" id="dark-noti">Dark Mode On</div>
+        <!-- Landing Section -->
+        <main class="landing">
+            <div class="container">
+                <nav class="hidden down">
+                    <div class="logo">
+                        <img src="https://i.ibb.co/0jwB8Hx/logo.png" alt="" />
+                    </div>
+                    <!-- Menu -->
+                    <ul>
+                        <li class="hidden right dl-2">
+                            <a href="#about">About Me</a>
+                        </li>
+                        <li class="hidden right dl-4">
+                            <a href="#portfolio">My Portfolio</a>
+                        </li>
+                        <li class="hidden right dl-6">
+                            <a href="#testimonial">Clients Testimonial</a>
+                        </li>
+                        <li class="hidden right dl-8 contact-btn-li">
+                            <!-- Contact Button -->
+                            <a href="#contact" class="contact-btn"
+                                >Contact Me</a
+                            >
+                        </li>
+                        <li class="dark-light hidden right dl-10">
+                            <i
+                                class="fa-solid fa-sun"
+                                id="toggleButton"
+                                onclick="toggleDarkMode()"></i>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu">
+                        <div class="icon">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <ul>
+                            <li><a href="#about">About Me</a></li>
+                            <li><a href="#portfolio">My Portfolio</a></li>
+                            <li>
+                                <a href="#testimonial">Clients Testimonial</a>
+                            </li>
+                            <li class="contact-btn-li">
+                                <a href="#contact" class="contact-btn-mobile"
+                                    >Contact Me</a
+                                >
+                            </li>
+                            <li class="dark-light">
+                                <i
+                                    class="fa-solid fa-sun"
+                                    id="mobileToggle"
+                                    onclick="toggleDarkMode()"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="landing-content">
+                    <div class="row name hidden right">
+                        I'm, <span> Osman Abdalaziz</span>
+                    </div>
+                    <div class="row carrier hidden left">
+                        <h1>Front End</h1>
+                        <p>Web Developer</p>
+                    </div>
+                    <div class="row scroll">
+                        <a href="#about" class="scroll-btn"
+                            ><span>Scroll Down</span
+                            ><i class="fa-solid fa-angles-down"></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- About Me Section -->
+        <section class="about-me" id="about">
+            <div class="container">
+                <div class="special-heading hidden up">Who Am I?</div>
+                <p class="hidden down">About Me</p>
+
+                <div class="about-me-content">
+                    <div class="text">
+                        <p class="hidden left">
+                            With over 5 years of experience in front-end
+                            development, I specialize in creating responsive,
+                            user-friendly websites. Proficient in HTML, CSS,
+                            JavaScript, I bring designs to life with precision
+                            and creativity. When I’m not coding, you’ll find me
+                            dabbling in design with Photoshop and Illustrator,
+                            ensuring every pixel is perfect.
+                        </p>
+                        <div class="buttons">
+                            <a class="hire hidden up" href="#contact"
+                                >Hire Me !</a
+                            >
+                            <a class="see-projects hidden up" href="#portfolio">
+                                <i
+                                    class="fa-solid fa-square-arrow-up-right fa-fw"></i>
+                                <span>See My Projects</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image hidden right">
+                        <img
+                            src="https://i.ibb.co/VgwVcys/about-me.jpg"
+                            alt="Osman Abdalaziz" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="special-heading hidden up">Showcasing My Work</div>
+                <p class="hidden down">My Portfolio</p>
+                <div class="text hidden right">
+                    Check out some of the projects I’ve had the pleasure of
+                    working on. Each one tells a story of creativity,
+                    dedication, and a lot of code. Click on any project to dive
+                    deeper into the details.
+                </div>
+                <div class="projects">
+                    <div id="notification" class="notification">
+                        <div>Preview is not available now</div>
+                    </div>
+                    <div
+                        class="project"
+                        data-tilt
+                        data-tilt-glare
+                        data-tilt-max-glare="0.6">
+                        <div class="overlay">
+                            <a
+                                href="https://osman-abdalaziz.infinityfreeapp.com/Projects/Front-End-Company/"
+                                >Show More Details</a
+                            >
+                        </div>
+                        <img
+                            src="https://i.ibb.co/fQdmdR8/portfolio-1.png"
+                            alt="" />
+                    </div>
+                    <div
+                        class="project"
+                        data-tilt
+                        data-tilt-glare
+                        data-tilt-max-glare="0.6">
+                        <div class="overlay">
+                            <a
+                                href="https://osman-abdalaziz.infinityfreeapp.com/Projects/PlantStore/"
+                                onclick=""
+                                >Show More Details</a
+                            >
+                        </div>
+                        <img
+                            src="https://i.ibb.co/3cv5Vmx/portfolio-4.png"
+                            alt="" />
+                    </div>
+                    <div
+                        class="project"
+                        data-tilt
+                        data-tilt-glare
+                        data-tilt-max-glare="0.6">
+                        <div class="overlay">
+                            <a
+                                class=""
+                                href="https://osman-abdalaziz.infinityfreeapp.com/Projects/InteriorDesignCompany/"
+                                onclick=""
+                                >Show More Details</a
+                            >
+                        </div>
+                        <img src="images/portfolio-2.png" alt="" />
+                    </div>
+                    <div
+                        class="project"
+                        data-tilt
+                        data-tilt-glare
+                        data-tilt-max-glare="0.6">
+                        <div class="overlay">
+                            <a
+                                class=""
+                                href="https://osman-abdalaziz.infinityfreeapp.com/Projects/BooksStore/"
+                                onclick=""
+                                >Show More Details</a
+                            >
+                        </div>
+                        <img src="images/portfolio-3.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="testimonial" id="testimonial">
+            <div class="container">
+                <div class="special-heading hidden up">
+                    What People Are Saying
+                </div>
+                <p class="hidden down">Testimonials</p>
+                <div class="text hidden left">
+                    Don’t just take my word for it! Here’s what some of my
+                    clients have to say about working with me.
+                </div>
+                <div class="swiper mySwiper hidden up">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <div class="info">
+                                <img
+                                    src="https://i.ibb.co/PD3vKtf/client.jpg"
+                                    alt="" />
+                                <h4>Lina Maher</h4>
+                            </div>
+                            <p>
+                                Osman's work never fails to amaze me. He's
+                                hardworking and u could see that crystal clear
+                                in here. Brilliant and outstanding skills.
+                            </p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <div class="info">
+                                <img
+                                    src="https://i.ibb.co/PD3vKtf/client.jpg"
+                                    alt="" />
+                                <h4>Mohammed Fathelrahman</h4>
+                            </div>
+                            <p>
+                                One of the most astonishing and spectacular app
+                                I have ever seen. Really smooth,
+                                overwhelming and no delay.
+                            </p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-me" id="contact">
+            <div class="container">
+                <div class="special-heading hidden up">Let’s Connect!</div>
+                <p class="hidden down">Contact Me</p>
+                <div class="text hidden right">
+                    Ready to start a project or just want to say hi? I’d love to
+                    hear from you. Drop me a message, and I’ll get back to you
+                    as soon as possible!
+                </div>
+                <div class="buttons hidden up">
+                    <a href="mailto:osmanabdalaziz2022@gmail.com" class="email"
+                        ><i class="fa-regular fa-envelope fa-fw"></i> Email</a
+                    >
+                    <a
+                        href="https://api.whatsapp.com/send?phone=966530740094"
+                        class="whatsapp"
+                        ><i class="fa-brands fa-whatsapp fa-fw"></i> Whatsapp</a
+                    >
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="hidden left">
+                    2024© All rights reserved to Osman Abdalaziz
+                </div>
+                <div class="hidden right">
+                    <span>Made By</span>
+                    <img src="https://i.ibb.co/86v0zww/white-logo.png" alt="" />
+                </div>
+            </div>
+        </footer>
+
+        <!-- Javascript Files -->
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- 3D tilt Js -->
+        <script src="javascript/vanilla-tilt.js"></script>
+
+        <!-- Main Javascript file -->
+        <script src="javascript/main.js"></script>
+    </body>
+</html>
