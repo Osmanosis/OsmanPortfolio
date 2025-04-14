@@ -80,12 +80,18 @@ function showNoti(mode, bgColor, textColor) {
 // Burger Menu for mobiles
 
 const burger = document.querySelector('.icon');
-const navLinks = document.querySelector('.mobile-menu ul');
+const xbtn = document.querySelector('.x-button');
+const navLinks = document.querySelector('.mobile-ul');
 
 burger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
-    burger.classList.toggle('toggle');
+    // burger.classList.toggle('toggle');
 });
+xbtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    // burger.classList.toggle('toggle');
+});
+
 
 
 VanillaTilt.init(document.querySelector(".project"), {
@@ -142,3 +148,26 @@ function showNotification(event) {
         }, 500); // يجب أن يكون متطابقاً مع مدة transition للـ opacity في CSS
     }, 1000);
 }
+
+// const upBtn = document.getElementById("upTopBtn");
+
+// window.addEventListener("scroll", () => {
+//     const halfPage = document.documentElement.scrollHeight / 2;
+//     if (window.scrollY > halfPage) {
+//         upBtn.classList.add("show");
+//     } else {
+//         upBtn.classList.remove("show");
+//     }
+// });
+
+// upBtn.addEventListener("click", () => {
+//     window.scrollTo({
+//         top: 0,
+//         behavior: "smooth"
+//     });
+
+//     upBtn.classList.add("uphide")
+//     setTimeout(() => {
+//         upBtn.classList.remove("uphide")
+//     }, 1000)
+// });

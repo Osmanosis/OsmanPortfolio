@@ -43,11 +43,32 @@
         <link rel="stylesheet" href="css/main.css" />
     </head>
     <body>
-        <span itemprop="image" itemscope itemtype="image/png">
-            <link
-                itemprop="url"
-                href="https://i.ibb.co/FKsSX77/Custom-Size-1.png" />
-        </span>
+        <!-- <button id="upTopBtn">
+            <i class="fa-solid fa-arrow-up fa-fw"></i>
+        </button> -->
+        <div class="mobile-ul">
+            <div class="x-button">
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">My Portfolio</a></li>
+                <li>
+                    <a href="#testimonial">Clients Testimonial</a>
+                </li>
+                <li class="contact-btn-li">
+                    <a href="#contact" class="contact-btn-mobile">Contact Me</a>
+                </li>
+                <li class="dark-light">
+                    <i
+                        class="fa-solid fa-sun"
+                        id="mobileToggle"
+                        onclick="toggleDarkMode()"></i>
+                </li>
+            </ul>
+        </div>
+
         <div class="dark-light-noti" id="dark-noti">Dark Mode On</div>
         <!-- Landing Section -->
         <main class="landing">
@@ -82,26 +103,10 @@
                     </ul>
                     <div class="mobile-menu">
                         <div class="icon">
-                            <span></span><span></span><span></span>
+                            <span class="hidden right dl-8"></span
+                            ><span class="hidden left dl-6"></span
+                            ><span class="hidden right dl-4"></span>
                         </div>
-                        <ul>
-                            <li><a href="#about">About Me</a></li>
-                            <li><a href="#portfolio">My Portfolio</a></li>
-                            <li>
-                                <a href="#testimonial">Clients Testimonial</a>
-                            </li>
-                            <li class="contact-btn-li">
-                                <a href="#contact" class="contact-btn-mobile"
-                                    >Contact Me</a
-                                >
-                            </li>
-                            <li class="dark-light">
-                                <i
-                                    class="fa-solid fa-sun"
-                                    id="mobileToggle"
-                                    onclick="toggleDarkMode()"></i>
-                            </li>
-                        </ul>
                     </div>
                 </nav>
                 <div class="landing-content">
@@ -181,7 +186,7 @@
                         data-tilt-max-glare="0.6">
                         <div class="overlay">
                             <a
-                                href="https://osman-abdalaziz.infinityfreeapp.com/Projects/Front-End-Company/"
+                                href="https://osmanabdalaziz-portfolio.netlify.app/Projects/Front-End-Company/"
                                 >Show More Details</a
                             >
                         </div>
@@ -196,7 +201,7 @@
                         data-tilt-max-glare="0.6">
                         <div class="overlay">
                             <a
-                                href="https://osman-abdalaziz.infinityfreeapp.com/Projects/PlantStore/"
+                                href="https://osmanabdalaziz-portfolio.netlify.app/Projects/PlantStore/"
                                 onclick=""
                                 >Show More Details</a
                             >
@@ -213,7 +218,7 @@
                         <div class="overlay">
                             <a
                                 class=""
-                                href="https://osman-abdalaziz.infinityfreeapp.com/Projects/InteriorDesignCompany/"
+                                href="https://osmanabdalaziz-portfolio.netlify.app/Projects/InteriorDesignCompany/"
                                 onclick=""
                                 >Show More Details</a
                             >
@@ -228,7 +233,7 @@
                         <div class="overlay">
                             <a
                                 class=""
-                                href="https://osman-abdalaziz.infinityfreeapp.com/Projects/BooksStore/"
+                                href="https://osmanabdalaziz-portfolio.netlify.app/Projects/BooksStore/"
                                 onclick=""
                                 >Show More Details</a
                             >
