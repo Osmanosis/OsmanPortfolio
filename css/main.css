@@ -6,8 +6,8 @@ html {
 }
 
 :root {
-    --main-color: #00a8ff;
-    --secondary-color: #0089d2;
+    --main-color: #38ada9;
+    --secondary-color: #079992;
     --main-padding: 50px;
 }
 
@@ -135,53 +135,6 @@ body {
     }
 }
 
-/* #upTopBtn {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    display: flex;
-    width: 50px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    background-color: #1f1f1f;
-    color: #fff;
-    border: 3px solid #1f1f1f;
-    cursor: pointer;
-    font-size: 20px;
-    z-index: 1000;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    opacity: 0;
-    visibility: hidden;
-}
-
-#upTopBtn.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-#upTopBtn:hover {
-    opacity: 0.8;
-}
-
-.uphide {
-    transform: scale(2);
-    -webkit-transform: scale(2);
-    -moz-transform: scale(2);
-    -ms-transform: scale(2);
-    -o-transform: scale(2);
-    opacity: 0;
-} */
-
 /* End Components */
 
 /* Start Landing */
@@ -197,7 +150,6 @@ body {
 
 .landing nav {
     max-width: 100%;
-    /* background-color: #1f1f1f; */
     display: flex;
     padding: 10px 0;
     border-radius: 50px;
@@ -208,14 +160,12 @@ body {
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    /* box-shadow: 0 10px 30px #000; */
     z-index: 23;
     position: relative;
 }
 
 .landing nav .logo {
     max-width: 130px;
-    /* margin-left: 20px; */
     display: flex;
     align-content: center;
 }
@@ -234,7 +184,6 @@ body {
 .mobile-ul ul {
     list-style: none;
     margin: 0;
-    /* padding: 5px 10px; */
     display: flex;
     justify-content: space-between;
     gap: 15px;
@@ -273,7 +222,7 @@ body {
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
-    width: 80px;
+    width: 55px;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -293,7 +242,8 @@ body {
 }
 
 .landing nav ul li a,
-.mobile-ul ul li a {
+.mobile-ul ul li a,
+.landing nav ul li .color-list {
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -803,11 +753,12 @@ body {
 
 .portfolio {
     padding: var(--main-padding) 0;
-    background-color: #f7f7f7;
+    background-color: #f5f5f5;
 }
 
 .portfolio .text,
-.contact-me .text {
+.contact-me .text,
+.my-skills .text {
     text-align: center;
     max-width: 70%;
     margin: 30px auto;
@@ -1083,10 +1034,86 @@ body {
 
 /* End Testimonial */
 
+/* Start MySkills */
+
+.my-skills {
+    padding: var(--main-padding) 0;
+}
+
+.my-skills .scroller {
+    max-width: 800px;
+    /* overflow: hidden; */
+    margin: auto;
+    mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent
+    );
+}
+
+.my-skills .scroller[data-animated="true"] {
+    overflow: hidden;
+}
+.my-skills .scroller[data-animated="true"] .my-skills-list {
+    width: fit-content;
+    flex-wrap: nowrap;
+    animation: scroll 15s linear infinite;
+    -webkit-animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - -10px));
+        -webkit-transform: translate(calc(-50% - -10px));
+        -moz-transform: translate(calc(-50% - -10px));
+        -ms-transform: translate(calc(-50% - -10px));
+        -o-transform: translate(calc(-50% - -10px));
+    }
+}
+
+.my-skills ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.my-skills ul li {
+    min-width: 100px;
+    height: 100px;
+    background-color: #f5f5f5;
+    color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.my-skills ul li i {
+    /* color: var(--main-color); */
+    background: linear-gradient(to bottom, #45c4bf, #079992);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+}
+
+.my-skills ul li span {
+    font-size: 15px;
+}
+
+/* End MySkills */
+
 /* Start Contact Me */
 
 .contact-me {
-    background-color: #f7f7f7;
+    background-color: #f5f5f5;
     padding: var(--main-padding) 0;
 }
 
@@ -1199,23 +1226,27 @@ footer img {
 }
 
 .dl-2.hidden {
-    transition-delay: 200ms;
+    transition-delay: 200ms !important;
 }
 
 .dl-4.hidden {
-    transition-delay: 400ms;
+    transition-delay: 400ms !important;
 }
 
 .dl-6.hidden {
-    transition-delay: 600ms;
+    transition-delay: 600ms !important;
 }
 
 .dl-8.hidden {
-    transition-delay: 800ms;
+    transition-delay: 800ms !important;
 }
 
 .dl-10.hidden {
-    transition-delay: 1000ms;
+    transition-delay: 1000ms !important;
+}
+
+.dl-12.hidden {
+    transition-delay: 1200ms !important;
 }
 
 .show {
@@ -1279,8 +1310,10 @@ footer img {
 body.dark-mode .mobile-ul {
     background-color: #373737a2;
 }
+
 body.dark-mode .about-me,
-body.dark-mode .testimonial {
+body.dark-mode .testimonial,
+body.dark-mode .my-skills {
     background-color: #1f1f1f !important;
     color: #fff;
 }
@@ -1320,8 +1353,9 @@ body.dark-mode .about-me .image::before {
 }
 
 body.dark-mode .portfolio,
-body.dark-mode .contact-me {
-    background-color: #222;
+body.dark-mode .contact-me,
+body.dark-mode .my-skills li {
+    background-color: #2a2a2a;
     color: #fff;
 }
 

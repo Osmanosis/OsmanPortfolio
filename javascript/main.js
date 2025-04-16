@@ -171,3 +171,25 @@ function showNotification(event) {
 //         upBtn.classList.remove("uphide")
 //     }, 1000)
 // });
+
+const scrollers = document.querySelectorAll(".scroller")
+
+addAnimation();
+
+function addAnimation() {
+
+    scrollers.forEach(scroller => {
+        scroller.setAttribute("data-animated", true)
+
+        const scrollerInner = scroller.querySelector(".my-skills-list")
+        const scrollerContent = Array.from(scrollerInner.children)
+
+        scrollerContent.forEach(item => {
+            const duplicatedItems = item.cloneNode(true)
+
+            duplicatedItems.setAttribute("aria-hidden", true)
+            scrollerInner.appendChild(duplicatedItems)
+        })
+    })
+
+}
