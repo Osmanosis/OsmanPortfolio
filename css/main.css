@@ -556,8 +556,8 @@ body {
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
-    animation: scroll infinite;
-    -webkit-animation: scroll 1s infinite;
+    animation: scrolldown 1s infinite;
+    -webkit-animation: scrolldown 1s infinite;
 }
 
 @media (max-width: 767px) {
@@ -590,7 +590,7 @@ body {
     }
 }
 
-@keyframes scroll {
+@keyframes scrolldown {
     0% {
         transform: translateY(0px);
         -webkit-transform: translateY(0px);
@@ -1169,7 +1169,7 @@ footer .container {
 
 footer img {
     max-width: 80px;
-    margin-left: 10px;
+    margin-left: 2.5px;
 }
 
 @media (max-width: 767px) {
