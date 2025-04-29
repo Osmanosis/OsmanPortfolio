@@ -1098,10 +1098,7 @@ body {
 }
 
 .my-skills ul li i {
-    /* color: var(--main-color); */
-    background: linear-gradient(to bottom, #45c4bf, #079992);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--main-color);
     font-size: 40px;
 }
 
